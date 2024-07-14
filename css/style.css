@@ -1,0 +1,191 @@
+:root{
+    font-size: 10px;
+}
+header{
+    padding: 10px 100px;
+}
+.active{
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.active:hover{
+    color: gold;
+}
+.pageOne{
+    padding-top: 20px;
+    background: url(../image/page-1.png);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.pageTwo{
+    margin-top: -2px;
+    background: url(../image/page-2.png);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.pageThree{
+    background: url(../image/page-3.png);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.text h1 {
+    font-weight: bold;
+}
+.text h1:nth-child(2){
+    font-size: 120px;
+}
+.text p:nth-child(3){
+    line-height: 1.7;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.619);
+}
+.text p:nth-child(4){
+    position: relative;
+    font-size: 20px;
+    left: 20px;
+}
+.text p:nth-child(4)::before{
+    content: "";
+    position: absolute;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+a{
+    color: white !important;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+a:hover{
+    color: gold !important;
+}
+
+.right {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 40px;
+}
+.left {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 40px;
+}
+.line{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 35%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    bottom: 0px;
+}
+.parent{
+    background: rgba(158, 158, 158, 0.537);
+    width: 400px;
+    margin: 0 10px;
+    height: 2px;
+}
+.span1,.span2{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.pageOne .child{
+    background: white;
+    width: 33%;
+    height: 2px;
+}
+.pageTwo .child{
+    background: white;
+    width: 66%;
+    height: 2px;
+}
+.pageThree .child{
+    background: white;
+    width: 100%;
+    height: 2px;
+}
+
+@media(max-width:1000px){
+    header{
+        position:  absolute !important;
+    }
+    header .logo{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    header .links p {
+        margin-right: 10px;
+        position: relative;
+        left: -50px;
+    }
+    header .icons{
+        justify-content: start !important;
+        margin-left: 50px;
+    }
+    .line{
+        left: 20%;
+        transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        -moz-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+        -o-transform: translateY(-20%);
+}
+    .parent{
+        background: rgba(158, 158, 158, 0.537);
+        width: 150px;
+        margin: 0 10px;
+        height: 2px;
+    }
+    .text h1:nth-child(2){
+        font-size: 60px;
+    }
+    .text p:nth-child(3){
+        line-height: 1.7;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.619);
+    }
+    .right {
+        bottom: 40px;
+    }
+    .left {
+        bottom: 40px;
+    }
+}
